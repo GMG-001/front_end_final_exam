@@ -1,0 +1,223 @@
+body{
+    font-family: 'Viaoda Libre', cursive;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* სანავიგაციო და ბურგერბარი */
+
+.navbar{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: grey;
+	padding: 30px;
+}
+.navbar-link{
+    width: 100%;
+}
+
+
+.navbar-ul{
+	display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.nav-li{
+	/* margin: 10px 50px; */
+    font-size: 20px;
+}
+
+
+.toggle-button{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	font-size: 25px;
+	color: #fff;
+	display: none;
+	cursor: pointer;
+}
+
+
+
+@media(max-width: 480px){
+    .toggle-button{
+        display: block;
+    }
+    .navbar-link{
+        display: none;
+        width: 100%;
+    }
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-ul{
+        flex-direction: column;
+    }
+    .nav-li{
+        text-align: center;
+    }
+    .navbar-link.active{
+        display: block;
+    }
+
+}
+.text-start>p{
+   margin-top: 0;
+   margin-bottom: 2%;
+}
+
+
+
+
+
+
+
+/* პროდუქცია */
+
+.container1{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+}
+
+.product{   
+    margin-top: 50px;
+    padding-bottom: 50px;
+    /* border: 1px solid black;  */
+    max-width: 300px;
+    width: 100%;
+}
+
+.produc-image{
+    margin-left: 15%;
+    width: 50%;
+    height: 100%;
+}
+
+.product_image{
+/* border: 1px solid black; */
+height: 150px;
+width: 100%;
+}
+
+button{
+    margin-top: 5%;
+}
+
+.view{
+    padding: 3%;
+    background-color: lightblue;
+    transition: background-color 0.5s;
+    
+}
+.view>a{
+color: black;
+    
+}
+
+.add_cart{
+    padding: 5%;
+    background-color: orange;
+    transition: background-color 0.5s;
+
+}
+
+.view:hover{
+    background-color: cyan;
+}
+
+.add_cart:hover{
+background-color: orangered;
+}
+
+p{
+    margin-top: 5%;
+}
+
+/* ფუთერი */
+
+
+
+.footerbar{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: grey;
+	padding: 1.5%;
+}
+.footerbar-link{
+    width: 100%;
+}
+
+
+.footerbar-ul{
+	display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.footer-li{
+    font-size: 20px;
+}
+
+
+
+
+/* პროდუქტის გვერდი */
+
+
+.product_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    flex-wrap: wrap;
+}
+
+.image{
+    align-items: center;
+    width: 30%;
+    margin: 5%;
+}
+.produc_image{
+    width: 100%;
+}
+
+
+
+/* რეგისტრაციის ფორმა */
+
+.error-text{
+    color: red;
+    margin: 1.5% 0;
+    font-style: italic;
+}
+
+.sing_up_container{
+    margin: 20px auto;
+    text-align: center;
+
+}
+.sub_button{
+    background-color: blue;
+    color: #fff;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+
+.footer_container, .product_footer_container{
+    margin-top: 100%;
+
+}

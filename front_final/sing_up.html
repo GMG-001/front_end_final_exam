@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/498fd7049e.js" crossorigin="anonymous"></script>
+    <title>sing up</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <nav class="navbar-link" id="links" >
+                <ul class="navbar-ul">
+                    <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+
+                </ul>
+            </nav>
+            <div class="toggle-button" id="togglebutton">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="sing_up_container">
+            <form action="" method="POST" id="registration">
+                <div>
+                    <input type="email" name="email" placeholder="მიუთითეთ იმეილი">
+                    <div class="error-text" id="error_email">
+        
+                    </div>
+                </div>
+                <div>
+                    <input type="text" name="username" placeholder="მიუთითეთ სახელი">
+                    <div class="error-text" id="error_username">
+        
+                    </div>
+                </div>
+                <div>
+                    <input type="text" name="surname" placeholder="მიუთითეთ გვარი">
+                    <div class="error-text" id="error_surname">
+        
+                    </div>
+                </div>
+                <div>
+                    <input type="password" name="password" placeholder="შეიყვანეთ პაროლი">
+                    <div class="error-text" id="error_password">
+        
+                    </div>
+                </div>
+                <div>
+        
+                    <input type="password" name="password2" placeholder="გაიმეორეთ პაროლი">
+                    <div class="error-text" id="error_password2">
+        
+                    </div>
+                </div>
+                <div>
+                    <input type="radio" name="gender">
+                    <label for="">მდედრობითი</label>
+                    <input type="radio" name="gender">
+                    <label for="">მამრობითი</label>
+                    <div class="error-text" id="error_gender">
+        
+                    </div>
+                </div>
+                <div>
+                    <input type="checkbox" name="agree">
+                    <label for="">ვეთანხმები წესებს</label>
+                    <div class="error-text" id="error_agree">
+        
+                    </div>
+                </div>
+        
+                <button class="sub_button" type="submit">რეგისტრაცია</button>
+        
+            </form>
+        </div>
+    </section>
+    <footer class="footer_container">
+        <div class="footerbar">
+            <nav class="footerbar-link" id="links" >
+            <ul class="footerbar-ul">
+                <li class="footer-li"><a href="#">კონტაქტი</a> </li>
+                <li class="footer-li"><a href="#">ჩვენს შესახებ</a> </li>
+                <li class="footer-li"><a href="#">შეგვიკვეთეთ</a> </li>
+            </ul>
+            </nav>
+        </div>
+    </footer>   
+    <script src="js/sing_up.js"></script>
+</body>
+</html>
